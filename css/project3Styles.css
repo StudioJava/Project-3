@@ -6,7 +6,7 @@ html, html * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   font-family: 'Open Sans', sans-serif;
 }
 body {
     margin: 0 auto;
@@ -58,7 +58,7 @@ form {
     max-width: 400px;
     margin: 0 auto;
 }
-input[type="text"], input[type="email"], input[type="telephone"], input[type="tel"], textarea, select {
+input[type="text"], input[type="email"], input[type="tel"], input[type="tel"], textarea, select {
     background: rgba(255,255,255,0.1);
     border: none;
     font-size: 16px;
@@ -110,7 +110,9 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     padding-left: 5px;
 }
 input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
-    font-weight: bold;
+    font-weight: bolder;
+	letter-spacing: 1px;
+	
 }
 input[placeholder="requred"],input[placeholder=""] {
     text-align: right;
@@ -155,7 +157,7 @@ li:nth-child(-n+3) {
     max-width: 500px;
 }
 
-input[type="text"],input[type="email"], input[type="telephone"],input[type="street address"],input[type="city"],select {
+input[type="text"],input[type="email"], input[type="tel"],input[type="street address"],input[type="city"],select {
    width: 70%;
 	
 }
