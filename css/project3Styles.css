@@ -120,7 +120,7 @@ input[placeholder="requred"],input[placeholder=""] {
 input[placeholder="requred"]:focus {
     text-align: left;
 }
-input[placeholder="requred"]:visited {
+input[placeholder="requred"]:active {
     text-align: left;
     color: red;
 }
