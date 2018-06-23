@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/project3Styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project 3</title>
+</head>
+
+<body>
+<header>
+  <h1>The Code View</h1>
+</header>
+<main>
+  <div class="row">
+    <div class="col ">
+      <div class="box">
+        <h1>Signup for our newsletter</h1>
+        <br>
+        <p>Get the latest news on how your code is doing right in your inbox.</p>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend style="font-weight: bolder">Contact Information</legend>
+            <div class="container">
+              <label for="name">Full Name</label>
+              <input required type="text" id="name" name="user_name" placeholder="requred">
+            </div>
+            <div class="container">
+              <label for="email">Email</label>
+              <input required type="email" id="email" name="user_email" placeholder="requred">
+            </div>
+            <div class="container">
+              <label for="telephone">Phone Number</label>
+              <input type="telephone" id="telephone" name="user_telephone" placeholder="phone number">
+            </div>
+            <div class="container">
+              <label for="address">Street Address</label>
+              <input  type="text" id="address" name="user_address" placeholder="street address" >
+            </div>
+            <div class="container">
+              <label for="city">City</label>
+              <input  type="text" id="city" name="user_city" placeholder="city" >
+            </div>
+            <div class="container">
+              <label for="state">State</label>
+              <select name="user_state" id="state">
+                <option value="none" disabled selected>Choose a state</option>
+                <optgroup label="West States">
+                <option value="california">California</option>
+                <option value="alaska">Alaska</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="oregon">Oregon</option>
+                <option value="washington">Washington</option>
+                </optgroup>
+                <optgroup label="Mountain States">
+                <option value="Montana">Montana</option>
+                <option value="woming">Wyoming</option>
+                <option value="colorado">Colorado</option>
+                <option value="new mexico">New Mexico</option>
+                <option value="idaho">Idaho</option>
+                <option value="utah">Utah</option>
+                <option value="arizona">Arizona</option>
+                <option value="nevada">Nevada</option>
+                </optgroup>
+                <optgroup label="Pacific States">
+                <option value="maine">Maine</option>
+                <option value="new-hampshire">New Hampshire</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="rhode-island">Rhode Island</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="new-york">New York</option>
+                <option value="new-jersey">New Jersey</option>
+                <option value="delaware">Delaware</option>
+                <option value="maryland">Maryland</option>
+                <option value="virginia">Virginia</option>
+                <option value="north-carolina">North Carolina</option>
+                <option value="south-carolina">South Carolina</option>
+                <option value="georgia">Georgia</option>
+                <option value="florida">Florida</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="container">
+              <label for="zip-code">Zip code</label>
+              <input type="text" id="zip-code" name="user_zip-code" placeholder="zip code">
+            </div>
+          </fieldset>
+          <br>
+          <hr>
+          <br>
+          <fieldset>
+            <legend  >Newsletter</legend>
+            <p>Select the newsletter you would like to receive</p>
+            <br>
+            <label>Interest</label>
+            <input type="checkbox" id="html" value="interest_html" name="user_interest">
+            <label class="light" for="html-news">HTML News</label>
+            <br>
+            <input type="checkbox" id="css" value="interest_css" name="user_interest">
+            <label class="light" for="css_news">CSS News</label>
+            <br>
+            <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest">
+            <label class="light" for="javascript-news">Javascript News</label>
+            <br>
+            <br>
+            <label for="newsletter" >Newsletter format</label>
+            <input type="radio" id="html_format" value="news_format" name="user_format">
+            <label for="news_format" class="light" >HTML</label>
+            <br>
+            <!-- for statement shoud match the id radio's button-->
+            <input type="radio" id="text_format" value="news_format" name="user_format">
+            <label for="news_format" class="light" >Plain text</label>
+            <br>
+            <br>
+            <label for="topics">Other topics you&#39;d like to hear about</label>
+            <textarea name="user_topics" id="topics" cols="9" rows="2"></textarea>
+          </fieldset>
+        </form>
+        <button type="submit">Sign Up</button>
+        <p id="copyright">Copyright The Code Review</p>
+      </div>
+    </div>
+  </div>
+  <!--		End of Row--> 
+  
+  <!--		End of Row ********************************--> 
+  
+</main>
+</body>
+</html>

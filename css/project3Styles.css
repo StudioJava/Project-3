@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+body {
+    margin: 0 auto;
+}
+main {
+    max-width: 1000px;
+    background: rgba(76,125,160,1.00);
+}
+h1 {
+    font-weight: 300;
+}
+/*********************************header*/
+header{
+	background-color: #1A1A1A;
+	color: white;
+	text-align: center;
+	padding: 25px 0px;
+}
+.box {
+    color: white;
+    min-height: 500px;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 25px;
+}
+.box >p {
+    padding: 0px 40px;
+    text-align: left;
+}
+/*form*/
+form {
+    border-radius: 5px;
+    box-shadow: 10px 2px 70px 1px black;
+    color: white;
+    text-align: left;
+    background-color: rgba(53,88,113,1.00);
+    /* [disabled]max-width: 90%;
+*/
+	width: 90%;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+.row {
+    max-width: 400px;
+    margin: 0 auto;
+}
+input[type="text"], input[type="email"], input[type="telephone"], input[type="tel"], textarea, select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+label, legend {
+    display: block;
+    margin-bottom: 8px;
+}
+fieldset {
+    border: none;
+}
+button {
+    font-weight: 300;
+    padding-top: 11px;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-bottom: 11px;
+    color: #FFF;
+    background-color: #6e25d4;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #310F5F;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+label.light {
+    font-weight: 300;
+    margin-left: 5px;
+}
+input[type="checkbox"] + label, input[type="radio"] + label {
+    font-weight: 300;
+    font-size: .85em;
+    display: inline;
+    padding-left: 5px;
+}
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+input[placeholder="requred"],input[placeholder=""] {
+    text-align: right;
+}
+input[placeholder="requred"]:focus {
+    text-align: left;
+}
+input[placeholder="requred"]:visited {
+    text-align: left;
+    color: red;
+}
+/*UI elements states pseudo classes------------------*/
+
+input:focus, textarea:focus {
+    background-color: #EAE0A8;
+}
+input[id="zip-code"] {
+    width: 50%;
+}
+#copyright {
+    text-align: center;
+}
+
+/*********************************TABLET VIEW*/
+@media (min-width:768px) {
+body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:after {
+    content: "|";
+    margin-left: 5px;
+}
+li:last-child a:after {
+    content: "";
+}
+li:nth-child(-n+3) {
+    border-bottom: none;
+}
+.row {
+    max-width: 500px;
+}
+
+input[type="text"],input[type="email"], input[type="telephone"],input[type="street address"],input[type="city"],select {
+   width: 70%;
+	
+}
+.container {
+ display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;		
+}
+	
+}
