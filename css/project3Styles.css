@@ -80,7 +80,11 @@ label, legend {
 fieldset {
     border: none;
 }
+.wrap {
+	text-align: center;
+}
 button {
+	
     font-weight: 300;
     padding-top: 11px;
     padding-right: 11px;
@@ -98,6 +102,8 @@ button {
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 label.light {
     font-weight: 300;
@@ -166,6 +172,11 @@ input[type="text"],input[type="email"], input[type="tel"],input[type="street add
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;		
+}
+	input[id="zip-code"] {
+	flex-direction: row;
+   margin-right: 35%;
+    width: 35%;
 }
 	
 }
